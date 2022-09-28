@@ -1,0 +1,32 @@
+### Get all courses
+GET http://localhost:8080/curso
+Accept: application/json
+
+### Get specific course
+GET http://localhost:8080/curso/5
+Accept: application/json
+
+### Create course
+POST http://localhost:8080/curso
+Content-Type: application/json
+Accept: application/json
+
+{
+  "nombre": "Bases de datos",
+  "cupo": 25
+}
+
+### Update course
+PUT http://localhost:8080/curso
+Content-Type: application/json
+Accept: application/json
+
+{
+  "curso_id": 3,
+  "nombre": "Bases de Datos",
+  "cupo": 20
+}
+
+### Delete course
+DELETE http://localhost:8080/curso/3
+Accept: text/plain

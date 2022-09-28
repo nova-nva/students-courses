@@ -1,0 +1,34 @@
+### Get all students
+GET http://localhost:8080/alumno
+Accept: application/json
+
+### Get specific student
+GET http://localhost:8080/alumno/7
+Accept: application/json
+
+### Create Student
+POST http://localhost:8080/alumno
+Content-Type: application/json
+Accept: application/json
+
+{
+  "genero_id": 1,
+  "nombre": "Rony Aliaga",
+  "edad": 16
+}
+
+### Update Student
+PUT http://localhost:8080/alumno
+Content-Type: application/json
+Accept: application/json
+
+{
+  "alumno_id": 24,
+  "genero_id": 2,
+  "nombre": "Rita Reyes",
+  "edad": 21
+}
+
+### Delete Student
+DELETE http://localhost:8080/alumno/7
+Accept: text/plain

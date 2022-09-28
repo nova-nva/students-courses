@@ -1,0 +1,9 @@
+### Login
+POST http://localhost:8080/usuario/login
+Accept: text/plain
+Content-Type: application/json
+
+{
+  "email": "alexander@noreply.com",
+  "password": "alex"
+}
